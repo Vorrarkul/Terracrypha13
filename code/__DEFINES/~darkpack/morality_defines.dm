@@ -8,6 +8,7 @@
 // Very simplified version of virtues
 #define MORALITY_HUMANITY "morality_humanity"
 #define MORALITY_ENLIGHTENMENT "morality_enlightenment"
+//Added
 #define MORALITY_CONVICTION_SELF_CONTROL "morality_conviction_self_control"
 #define MORALITY_CONSCIENCE_INSTINCT "morality_concience_instinct"
 

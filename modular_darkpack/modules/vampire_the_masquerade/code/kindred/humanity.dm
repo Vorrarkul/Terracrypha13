@@ -3,7 +3,10 @@
 
 	// "Enlightenment" is essentially the Path of Pure Evil. Inverts Humanity changes and limits.
 	var/is_enlightenment = owner.is_enlightenment()
-	var/path = is_enlightenment ? "Enlightenment" : "Humanity"
+	var/is_humanity = owner.is_humanity()
+	var/is_conviction_self_control = owner.is_conviction_self_control()
+	var/is_conscience_instinct = owner.is_conscience_instinct()
+	var/path = !is_humanity ? "Enlightenment" : "Humanity"
 	if (is_enlightenment && !forced)
 		value = -value
 		limit = 10 - limit
@@ -33,15 +36,16 @@
 
 	//before going any further, roll either conscience or conviction to determine if we actually lose path/humanity
 	if(humanity_change < 0)
-		var/stat_to_roll = is_enlightenment ? STAT_CONVICTION : STAT_CONSCIENCE
+		var/stat_to_roll = (is_enlightenment || is_conviction_self_control) ? STAT_CONVICTION : STAT_CONSCIENCE
 		var/datum/storyteller_roll/degeneration_roll = new()
 		degeneration_roll.applicable_stats = list(stat_to_roll)
 		degeneration_roll.difficulty = difficulty
 		degeneration_roll.roll_output_type = ROLL_FLAG_ROLLER|ROLL_FLAG_ADMIN
 		var/roll_result = degeneration_roll.st_roll(owner)
+		var/justification = (is_enlightenment || is_conviction_self_control) ? "conviction" : "conscience"
 
 		if(roll_result == ROLL_SUCCESS)
-			to_chat(owner, span_green("Your [is_enlightenment ? "conviction" : "conscience"] prevents you from losing [path] as you successfully justify your actions!"))
+			to_chat(owner, span_green("Your [justification] prevents you from losing [path] as you successfully justify your actions!"))
 			return
 		else
 			to_chat(owner, span_danger("You fail to justify your actions as the Beast within awakens..."))
@@ -55,15 +59,15 @@
 	if (humanity_change > 0)
 		SEND_SOUND(owner, sound('modular_darkpack/modules/deprecated/sounds/humanity_gain.ogg', volume = 75))
 		to_chat(owner, span_boldnicegreen("[uppertext(path)] INCREASED!"))
-
+		var/beast_feeling_positive = (is_enlightenment || is_conscience_instinct) ? "reaching perfect harmony with you" : "falling into a deep slumber, waiting"
 		// Gaining Path flavour text
 		switch (owner.st_get_stat(STAT_MORALITY))
 			if (10)
-				to_chat(owner, span_green("As your [path] reaches its peak, you feel the Beast [is_enlightenment ? "reaching perfect harmony with you" : "falling into a deep slumber, waiting"]."))
+				to_chat(owner, span_green("As your [path] reaches its peak, you feel the Beast [beast_feeling_positive]."))
 	else if (humanity_change < 0)
 		SEND_SOUND(owner, sound('modular_darkpack/modules/deprecated/sounds/humanity_loss.ogg', volume = 75))
 		to_chat(owner, span_userdanger(span_bold("[uppertext(path)] DECREASED!")))
-
+		var/beast_feeling_negative = (is_enlightenment || is_conscience_instinct) ? "taking power over" : "reawakening in"
 		// Losing Path flavour text
 		switch (owner.st_get_stat(STAT_MORALITY))
 			if (1)
@@ -75,6 +79,6 @@
 			if (4)
 				to_chat(owner, span_danger("You feel the Beast gnawing at the edges of your mind..."))
 			if (9)
-				to_chat(owner, span_warning("As you fall from your perfect [path], you feel the Beast [is_enlightenment ? "taking power over" : "reawakening in"] a dark corner of your soul."))
+				to_chat(owner, span_warning("As you fall from your perfect [path], you feel the Beast [beast_feeling_negative] a dark corner of your soul."))
 
 	SEND_SIGNAL(owner, COMSIG_LIVING_CHANGED_HUMANITY, humanity_change)

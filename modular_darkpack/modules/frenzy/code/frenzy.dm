@@ -95,7 +95,7 @@
 	if(!get_kindred_splat(src))
 		return
 
-	var/stat_to_roll = is_enlightenment() ? STAT_INSTINCT : STAT_SELF_CONTROL
+	var/stat_to_roll = is_enlightenment() && is_conscience_instinct() ? STAT_INSTINCT : STAT_SELF_CONTROL
 	var/datum/storyteller_roll/frenzy/kindred/frenzy_roll = new()
 	frenzy_roll.applicable_stats = list(stat_to_roll)
 	frenzy_roll.difficulty = difficulty

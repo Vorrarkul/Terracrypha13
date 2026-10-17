@@ -59,3 +59,29 @@
 	if(stat_morality.morality_path.alignment == MORALITY_ENLIGHTENMENT)
 		return TRUE
 	return FALSE
+//Added
+/mob/living/proc/is_humanity()
+	var/datum/st_stat/morality_path/morality/stat_morality = storyteller_stats[STAT_MORALITY]
+	if(!stat_morality?.morality_path)
+		return FALSE
+
+	if(stat_morality.morality_path.alignment == MORALITY_HUMANITY)
+		return TRUE
+	return FALSE
+/mob/living/proc/is_conviction_self_control()
+	var/datum/st_stat/morality_path/morality/stat_morality = storyteller_stats[STAT_MORALITY]
+	if(!stat_morality?.morality_path)
+		return FALSE
+
+	if(stat_morality.morality_path.alignment == MORALITY_CONVICTION_SELF_CONTROL)
+		return TRUE
+	return FALSE
+
+/mob/living/proc/is_conscience_instinct()
+	var/datum/st_stat/morality_path/morality/stat_morality = storyteller_stats[STAT_MORALITY]
+	if(!stat_morality?.morality_path)
+		return FALSE
+
+	if(stat_morality.morality_path.alignment == MORALITY_CONSCIENCE_INSTINCT)
+		return TRUE
+	return FALSE

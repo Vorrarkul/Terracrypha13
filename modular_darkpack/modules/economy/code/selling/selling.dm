@@ -61,7 +61,8 @@
 	if(seller && get_kindred_splat(seller))
 		if(seller.is_enlightenment())
 			return span_notice("You've sold [parent]!")
-
+		if(seller.is_conviction_self_control())
+			return span_notice("You've sold [parent]!")
 	// Default warning for Humanity path or non-vampires
 	return span_userdanger("Selling organs is a depraved act! If I keep doing this I will become a wight.")
 
