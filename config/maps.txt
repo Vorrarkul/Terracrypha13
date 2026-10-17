@@ -61,7 +61,7 @@ map special_francisco
 endmap
 
 map westfieldmall
-    votable
+    disabled
 endmap
 
 # Debug-only maps.
