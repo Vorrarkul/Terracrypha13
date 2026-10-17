@@ -5,7 +5,7 @@
 	faction = FACTION_GAIA
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = /datum/job/vampire/warder
+	supervisors = "the Sept's Warder"
 	req_admin_notify = 1
 	minimal_player_age = 25
 	exp_required_type_department = EXP_TYPE_GAIA

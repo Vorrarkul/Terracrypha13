@@ -25,5 +25,9 @@
 
 		if(stat_morality.morality_path.alignment == MORALITY_HUMANITY)
 			stat_morality.set_score(clamp(stat_conscience.get_score(include_bonus = TRUE) + stat_self_control.get_score(include_bonus = TRUE), 0, 10))
-		else if(stat_morality.morality_path.alignment == MORALITY_ENLIGHTENMENT)
+		if(stat_morality.morality_path.alignment == MORALITY_ENLIGHTENMENT)
 			stat_morality.set_score(clamp(stat_conviction.get_score(include_bonus = TRUE) + stat_instinct.get_score(include_bonus = TRUE), 0, 10))
+		if(stat_morality.morality_path.alignment == MORALITY_CONVICTION_SELF_CONTROL)
+			stat_morality.set_score(clamp(stat_conviction.get_score(include_bonus = TRUE) + stat_self_control.get_score(include_bonus = TRUE), 0, 10))
+		else if(stat_morality.morality_path.alignment == MORALITY_CONSCIENCE_INSTINCT)
+			stat_morality.set_score(clamp(stat_conscience.get_score(include_bonus = TRUE) + stat_instinct.get_score(include_bonus = TRUE), 0, 10))

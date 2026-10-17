@@ -8,6 +8,8 @@
 // Very simplified version of virtues
 #define MORALITY_HUMANITY "morality_humanity"
 #define MORALITY_ENLIGHTENMENT "morality_enlightenment"
+#define MORALITY_CONVICTION_SELF_CONTROL "morality_conviction_self_control"
+#define MORALITY_CONSCIENCE_INSTINCT "morality_concience_instinct"
 
 // Bearings
 // example: BEARING_SILENCE reduces the difficulty of all stealth rolls by minus one if the follower of the path is above path score 5.
