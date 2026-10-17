@@ -33,7 +33,7 @@ GLOBAL_LIST_INIT(morality_paths, init_morality_paths())
 /datum/morality/heaven
 	name = "Path of Heaven"
 	desc = "Followers of Via Caeli attempt to control their Beast through religious devotion. They are frequently referred to as the Faithful."
-	alignment = MORALITY_HUMANITY
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_HOLINESS
 
 /datum/morality/metamorphosis
@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT(morality_paths, init_morality_paths())
 /datum/morality/assamite
 	name = "Path of Blood"
 	desc = "The Path of Blood is a Path of Enlightenment found almost exclusively among the Banu Haqim. Its followers fight the Beast with rigorous devotion to the cause of their founder. Adherents are called Dervishes."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_RESOLVE
 
 /datum/morality/hive
@@ -57,39 +57,42 @@ GLOBAL_LIST_INIT(morality_paths, init_morality_paths())
 /datum/morality/kings
 	name = "Road of Kings"
 	desc = "Via Regalis, commonly called the Road of Kings. Followers of Via Regalis control their Beast by ruling over others. Mortals are inferior, promises will be fulfilled, and power is everything. Those who follow the Road of Kings are known as Scions."
-	alignment = MORALITY_HUMANITY
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_COMMAND
 
 /datum/morality/heart
 	name = "Path of the Scorched Heart"
 	desc = "The Path of the Scorched Heart, originally called the Path of Rathmonicus, is an ancient Path of Enlightenment that originates with the True Brujah. Based on the Book of the Empty Heart by Rathmonicus, it was first disseminated among a few Kindred in the Catholic Church; its scriptures were later reunited and compiled by the True Black Hand. The Path of the Scorched Heart controls the Beast by systematically eradicating every emotion within the vampire's heart. The Path is especially favored among the True Brujah, who already cultivate few emotions. Adherents are called the Unforgiving."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_INTELLECT
 
 /datum/morality/typhon
 	name = "Path of Typhon"
 	desc = "The Path of Typhon is a Path of Enlightenment that draws heavily on Setite doctrine and the religion around their Antediluvian. Adherents are called Theophidians and Typhonists. Outsiders call them Corruptors."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_DEVOTION
 
 /datum/morality/typhon/ecstasy
 	name = "Path of Ecstasy"
 	desc = "The Path of Ecstasy is intimately tied to a variant of Setite doctrine, finding the act of reveling in euphoria to itself be holy. Ecstatics stuff the beast full of pleasure to render it fat and lazy, and vary from the Typhonists in focusing upon the pleasures rather than the corruption itself."
+	alignment = MORALITY_HUMANITY
 	bearing = BEARING_RAPTURE
 
 /datum/morality/typhon/warrior
 	name = "Path of the Warrior"
 	desc = "The Setites of this Path do not corrupt from the shadows, but embody their ideal of Set as a warrior. They consider their fanaticism and masochism to itself be their holy acts, fighting a war to intimidate even the Beast itself with their prowess."
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_FURY
 
 /datum/morality/bones
 	name = "Path of the Bones"
 	desc = "The Path of the Bones, whose followers are nicknamed Gravediggers, is a Path of Enlightenment that suppresses the Beast by studying the true nature of death and its relationships with other states of existence. Scholars of death and the transition into it, followers of this Path benefit Necromantic and Thanatological study via the knowledge they bring, rather than the political or pragmatic benefits of their concourse with the dead. This Path is sometimes derided as one that celebrates wanton murder, but the Gravedigger's curiosity supercedes their concern for life - and their encounters with all manner of mortality can be made victim of their grim curiosity, causing them to rarely deal with mortals, resulting in a very introverted, quiet temperament."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_SILENCE
 
 /datum/morality/bones/death
 	name = "Path of Death and the Soul"
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	desc = "A path oft-considered 'inspired by' the Path of the Bones when charitable and 'stolen from' the Path when discharitable, it holds many of the same tenets but would be found more commonly amongst the Sabbat. Its adherents claim a distinct nature, but outsiders have yet to identify these distictions."
 
 /datum/morality/night
@@ -101,7 +104,7 @@ GLOBAL_LIST_INIT(morality_paths, init_morality_paths())
 /datum/morality/night/road
 	name = "Road of Night"
 	desc = "Via Noctis, commonly called the Road of Night. The Redeemers feel the weight of Caine's curse and their own damnation, even more so than those who follow Via Caeli. Also like the Faithful, the Redeemers seek redemption and forgiveness, and to earn it requires suffering and purification. However, instead of the fairly benign ways of the Faithful, the Redeemers actively go about the world of man, punishing and killing mortal sinners. Some followers of Via Noctis offer penance for lesser deeds, and still others will Embrace irredeemable mortals to help them in their punishment. They also target Cainites who would tempt mortals into corruption, outstanding examples being the Followers of Set and the Baali."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_GUILT
 
 /datum/morality/honor
@@ -118,12 +121,13 @@ GLOBAL_LIST_INIT(morality_paths, init_morality_paths())
 
 /datum/morality/beast/harmony
 	name = "Path of Harmony"
+	alignment = MORALITY_CONSCIENCE_INSTINCT
 	desc = "A similar path to that of the Feral Heart, this is often considered a more ancient variant. While a Harmonist feels much the same regarding their role as a predator, they contextualize themself further with their role in the natural world and tend to have greater Conscience."
 
 /datum/morality/samiel
 	name = "Code of Samiel"
 	desc = "The Code of Samiel is a doctrine that formalized the tenets of the Warrior Salubri and of the Path of Retribution. It was designed by Saulot's greatest childe warrior, Samiel himself. Adherents swear to bring retribution to all manner of evil, chief among which are Infernalists, Demons and the Followers of Set. Vengeance, vigilance and righteousness are all held as core virtues."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_HUMANITY
 	bearing = BEARING_JUSTICE //I have no idea what this actually does
 
 /datum/morality/caine
@@ -187,7 +191,7 @@ GLOBAL_LIST_INIT(morality_paths, init_morality_paths())
 /datum/morality/paradox
 	name = "Path of Paradox"
 	desc = "The Path of Paradox is centered around the karmic duty Kindred hold. According to its adherents, Kindred have eluded samsara and hold a svadharma to fulfill; advancement of the cycle of the universe. This largely centers around either finding other Kindreds' role to play in this, or destroying them to return them to samsara."
-	alignment = MORALITY_ENLIGHTENMENT
+	alignment = MORALITY_CONVICTION_SELF_CONTROL
 	bearing = BEARING_CONFIDENCE
 
 /datum/morality/self_focus
