@@ -1,5 +1,5 @@
 /obj/structure/closet/crate/bin
-	desc = "A trash bin, place your trash here for the janitor to collect."
+	desc = "A trash bin, place your trash here for a janitor to collect."
 	name = "trash bin"
 	icon_state = "trashcan"
 	base_icon_state = "trashcan"

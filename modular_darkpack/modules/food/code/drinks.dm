@@ -13,7 +13,7 @@
 	//foodtype = BREAKFAST
 
 /obj/item/reagent_containers/cup/glass/coffee/vampire/robust
-	name = "robust coffee"
+	name = "coffee"
 	icon_state = "coffee-alt"
 
 /obj/item/reagent_containers/cup/glass/bottle/beer/vampire

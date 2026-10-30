@@ -115,7 +115,7 @@
 //ASHES TO ASHES
 /mob/living/basic/samedi_ash_pile
 	name = "ash pile"
-	desc = "Ashes to ashes, dust to dust, and into space."
+	desc = "Ashes to ashes, dust to dust."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ash"
 	icon_living = "ash"

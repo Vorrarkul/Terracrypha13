@@ -7,7 +7,7 @@
 
 /obj/effect/decal/cleanable/ash
 	name = "ashes"
-	desc = "Ashes to ashes, dust to dust, and into space."
+	desc = "Ashes to ashes, dust to dust, and into the trash."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ash"
 	plane = GAME_PLANE
