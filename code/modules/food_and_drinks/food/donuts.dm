@@ -2,7 +2,7 @@
 
 /obj/item/food/donut
 	name = "donut"
-	desc = "Goes great with robust coffee."
+	desc = "Goes great with coffee."
 	icon = 'icons/obj/food/donuts.dmi'
 	abstract_type = /obj/item/food/donut
 	inhand_icon_state = "donut1"
