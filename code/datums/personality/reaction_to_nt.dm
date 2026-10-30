@@ -26,13 +26,13 @@
 /datum/personality/nt/loyalist
 	savefile_key = "loyalist"
 	name = "Loyal"
-	desc = "I believe in the station and in Central Command, till the very end!"
+	desc = "I believe in Endron and Pentex, till the very end!"
 	pos_gameplay_desc = "Likes company posters and signs"
 	mood_event_type = /datum/mood_event/nt_loyalist
 
 /datum/personality/nt/disillusioned
 	savefile_key = "disillusioned"
 	name = "Disillusioned"
-	desc = "Nanotrasen isn't what it used to be. This isn't what I signed up for."
+	desc = "Endron isn't what it used to be. This isn't what I signed up for."
 	neg_gameplay_desc = "Dislikes company posters and signs"
 	mood_event_type = /datum/mood_event/nt_disillusioned

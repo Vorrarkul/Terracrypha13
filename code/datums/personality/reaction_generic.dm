@@ -91,12 +91,12 @@
 /datum/personality/whimsical
 	savefile_key = "whimsical"
 	name = "Whimsical"
-	desc = "This station is too serious sometimes, lighten up!"
+	desc = "This town is too serious sometimes, lighten up!"
 	pos_gameplay_desc = "Likes ostensibly pointless but silly things, and does not mind clownish pranks"
 
 /datum/personality/snob
 	savefile_key = "snob"
 	name = "Snobbish"
-	desc = "I expect only the best out of this station - anything less is unacceptable!"
+	desc = "I expect only the best out of this town - anything less is unacceptable!"
 	neut_gameplay_desc = "Room quality affects your mood"
 	personality_trait = TRAIT_SNOB
