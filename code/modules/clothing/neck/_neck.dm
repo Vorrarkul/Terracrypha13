@@ -25,7 +25,7 @@
 
 /obj/item/clothing/neck/bowtie
 	name = "bow tie"
-	desc = "A small neosilk bowtie."
+	desc = "A small silk bowtie."
 	inhand_icon_state = "" //no inhands
 	w_class = WEIGHT_CLASS_SMALL
 	custom_price = PAYCHECK_CREW
@@ -39,7 +39,7 @@
 
 /obj/item/clothing/neck/bowtie/rainbow
 	name = "rainbow bow tie"
-	desc = "An extremely large neosilk rainbow-colored bowtie."
+	desc = "An extremely large silk rainbow-colored bowtie."
 	icon = 'icons/obj/clothing/neck.dmi'
 	icon_state = "bowtie_rainbow"
 	post_init_icon_state = null
@@ -49,7 +49,7 @@
 
 /obj/item/clothing/neck/tie
 	name = "slick tie"
-	desc = "A neosilk tie."
+	desc = "A silk tie."
 	inhand_icon_state = "" //no inhands
 	alternate_worn_layer = LOW_NECK_LAYER // So that it renders below suit jackets, MODsuits, etc
 	w_class = WEIGHT_CLASS_SMALL
@@ -173,7 +173,7 @@
 	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
 
 /obj/item/clothing/neck/tie/red/hitman
-	desc = "This is a $47,000 custom-tailored Référence Du Tueur À Gages tie. The clot is from neosilkworms raised at a tie microfarm in Cookwell, from a secret pattern passed down by monk tailors since the twenty-first century!"
+	desc = "This is a $47,000 custom-tailored Référence Du Tueur À Gages tie. The clot is from silkworms raised at a tie microfarm in Cookwell, from a secret pattern passed down by monk tailors since the twenty-first century!"
 	tie_timer = 1 SECONDS // You're a professional.
 	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
 
@@ -193,7 +193,7 @@
 
 /obj/item/clothing/neck/tie/horrible
 	name = "horrible tie"
-	desc = "A neosilk tie. This one is disgusting."
+	desc = "A silk tie. This one is disgusting."
 	icon = 'icons/obj/clothing/neck.dmi'
 	icon_state = "horribletie"
 	post_init_icon_state = null

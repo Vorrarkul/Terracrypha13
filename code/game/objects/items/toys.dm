@@ -1223,7 +1223,7 @@
 
 /obj/item/toy/figure/Initialize(mapload)
 	. = ..()
-	desc = "A \"Black Dog Games Factory\" brand [src]." // DARKPACK EDIT CHANGE
+	desc = "A \"Avalon Incorporated\" brand [src]." // DARKPACK EDIT CHANGE
 	AddElement(/datum/element/toy_talk)
 
 /obj/item/toy/figure/attack_self(mob/user as mob)
