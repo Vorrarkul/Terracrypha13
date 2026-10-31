@@ -26,7 +26,6 @@
 		"Endron Chief Financial Officer"
 	)
 
-	allowed_splats = list(SPLAT_GAROU, SPLAT_KINDRED)
 	minimum_masquerade = 4
 	// minimal_renown_rank = 3
 	allowed_tribes = list(TRIBE_BLACK_SPIRAL_DANCERS, TRIBE_RONIN)
