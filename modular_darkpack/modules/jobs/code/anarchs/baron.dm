@@ -3,7 +3,7 @@
 	faction = FACTION_ANARCHS
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Anarchs and the Traditions"
+	supervisors = "the Anarch Movement and the Anarchs"
 	config_tag = "BARON"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/baron

@@ -3,7 +3,7 @@
 	faction = FACTION_ANARCHS
 	total_positions = 7
 	spawn_positions = 7
-	supervisors = SUPERVISOR_BARON
+	supervisors = SUPERVISOR_BARONANARCHS
 	config_tag = "BRUISER"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/bruiser

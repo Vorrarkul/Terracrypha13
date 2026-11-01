@@ -3,7 +3,7 @@
 	faction = FACTION_CAMARILLA
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_CAMARILLA
+	supervisors = SUPERVISOR_TREMERECAMARILLA
 	config_tag = "CHANTRY_REGENT"
 	outfit = /datum/outfit/job/vampire/regent
 	job_flags = CITY_JOB_FLAGS
