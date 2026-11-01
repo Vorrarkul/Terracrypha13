@@ -267,7 +267,11 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define SUPERVISOR_SENESCHAL_PUBLIC "the COO"
 #define SUPERVISOR_BARON_PUBLIC "the Bar's Owner"
 #define SUPERVISOR_SOCIETY_OF_LEOPOLD "the Society of Leopold, the Inquisition, the local Provincial, and God"
-
+//New Addition
+#define SUPERVISOR_ANARCHS "the Anarchs"
+#define SUPERVISOR_BARONANARCHS "the Baron and the Anarchs"
+#define SUPERVISOR_ANARCHMOVEMENT "the Anarch Movement"
+#define SUPERVISOR_TREMERECAMARILLA "the Pyramid and the Camarilla"
 // Playtime tracking system, see jobs_exp.dm
 // weird one.
 #define EXP_TYPE_PLAYTIME "Playtime"
